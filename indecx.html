@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog - Modulo 1</title>
+</head>
+<body>
+    <h1 id="inicio">Modulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2>Índice: </h2>
+    <ul>
+        <li><strong><i><a href="#historia">Historia dos computadores</a></i></strong></li>
+        <li><strong><i><a href="#cliente">Clients</a></i></strong></li>
+        <li><strong><i><a href="#servidor">Servers</a></i></strong></li>
+        <li><strong><i><a href="#basico">Estrutura basica de HTML</a></i></strong></li>
+        <li><strong><i><a href="#lista">Listas Ordenadas e Listas Não Ordenadas</a></i></strong></li>
+        <li><strong><i><a href="#referencia">Referencia</a></i></strong></li>
+    </ul>
+
+    <h3 id="historia">Historia dos computadores</h3><h6>Historia Real</h6>
+    <small><a href="#inicio">voltar</a></small>
+    <p>A historia do computadores começou la na epoca da guerra, mas o computador que foi projetado para ja começar a fazer grandes calculos,
+        é o <strong><u>Harvard Mark</u></strong> <i>(1944)</i>, ele era eletromecanico baseado em calculos assim iniciando a <i>1ª Geração</i> de computadores. 
+        La por meados dos anos 40 o <strong><u>Colossus</u></strong> <i>(1946)</i>, que era um computador mais moderno para epóca que fazia cripto analise, ele era usado pela <i>Alemanha</I> para calculos mais complexos.
+        Só que ao mesmo tempo tinha nos <i>EUA</i> o <strong><u>ENIAC</u></strong> <i>(1946)</i>, que era automatico e fazia os calculosde forma rapida e moderna, surgiu nesta epoca o termo <mark>bug</mark> que a tradução literal é incetos, pois eles sentavam nas partes eletronicas do computador e causava alguns problemas.
+        A <i>2ª Geração (1959 - 1965)</i> tivemos uma revolução com computadores ainda menores que os anteriores, agora usando transistores. 
+        A <i>3ª Geração (1965 - 1970)</i> teve a modernização dos aparelhos circuitos integradoos, trnaistores, capacitores, resistores.
+        E entramos na <i>4ª Geração (1971- Atualmente)</i> que é já era atual dos computadores, com aparelhos cada vez menores e é marcada pelos <u>PC</u> os <strong>computadores portateis.</strong>
+        Assim surgindo a internet durante a guerra fria para melhorar os meios de comunicações.
+    </p>
+
+    <h3 id="cliente">Clients</h3>
+    <small><a href="#inicio">voltar</a></small>
+    <p>Temos que intender o conceito e temos dois lados dessa historia, o lado <u>Clients</u> e o lado do servidor <u>Server.</u> </p>
+    <p>O que temos do lado do <u>Client</u> são as pessoas que consomem informações da internet, e esse outro lado é o <u>Server</u> que é por onde faz a comunicação entre redes dormando uma rede de cominicação.
+    Os <i>navegadores</i> são ferramentas utilizadas para os <i>clients</i> ter acesso a internet. São programas criados por empresas, utilizados para abrir e executar arquivos e seguem um padrão W3C, porem sempre tem uma diferença ou outra de interpretação.
+    É Também chamado de <i>"Browser"</i>, começõu com o <i>MOSAIC</i>, passou para o <i>Netsiqe</i> e hoje temos uma variedade de navegadores disponiveis gratuitamente.
+    <u><i>Aplicações Web</i></u> são resoluções criadas que possuem a internet como meio de comunicação entre <strong>Client X Server</strong> não sendo necessaria sua instalação, um exemplo que pode ser e não ser <i>Aplicações Web</i> é o facebook, se ele for acessado pelo aplicativo ele <strong>nâo é uma</strong> Aplicação web pois ele tem que ser feito dowload, agora ele acessado pelo navegador onde não é necessario um download de arquivo, ele se tonra uma <i>Aplicação Web.</i>
+    </p>
+
+    <h3 id="servidor">Servers</h3>
+    <small><a href="#inicio">voltar</a></small>
+    <p>O <i>Server</i><small>(servidor)</small> sãocomputadores centrais em um determinado lugar, onde vai fazer a comunicação com o os <i>clients</i>.
+        Estes servidores não preisam necessariamente estar conectados com a internet, ele pode ser um compudator em uma empresa por exemplo, para guardar os documentos e dados internos da empresa isso é chamado de <i><u>rede interna</u></i>.
+         Os <i>Servidores</i> tem de ser mais robustos pois ele precisa fazer o processamento de varios outros dispositivos conectados nele, ele tem de servir a varios outros computadores fazendo requisições para ele.
+        <p>Existem varios tipos de servidores:
+            <ul>
+                <li>De Arquivos</li>
+                <li>De Segurança (Firewall)</li>
+                <li>Streaming</li>
+                <li>E-mail</li>
+                <li>Web</li>
+            </ul>
+            O <i>Servidor</i> é dividido em duas parte, a parte <u>loógica</u> e a parte <u>física</u>:
+            <ol>
+                <li>Software</li>
+                <ul>
+                    <li>Sistemas Operacionais</li>
+                    <li>Monitoramento</li>
+                    <li>Servidores Web</li>
+                </ul>
+                <li>Hardware</li>
+                <ul>
+                    <li>Armazenamento (isco rígido, SSDs)</li>
+                    <li>Memória</li>
+                    <li>Processadores</li>
+                </ul>
+            </ol>
+            Falamos e falamos, mas agora vamos ver como funciona uma <i>Requisição HTTP</i>. É quando um <i>client</i> pede alguma informação (por exemplo digitar um endereço e dar enter), é processada a informação e vai devolver a resposta (exemplo HTML, CSS, JS, imagens...) 
+        </p> 
+    </p>
+
+    <h3 id="basico">Estutura basica de HTML</h3>
+    <small><a href="#inicio">voltar</a></small>
+    <p>Todo site em HTML precisa de uma estrutura padrão para funcionar. Pense nisso como o "esqueleto" da página. Sem essas tags, o navegador não sabe como ler o seu código.
+        <p>Aqui está o código mínimo obrigatório:</p>
+        <p><strong><u>HTML</u></strong></p>
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Título da Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;!-- Todo o conteúdo visível do site entra aqui --&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </p>
+    <p>
+        <i><u>Explicando cada parte em poucas palavras:</u></i>
+        <ul>
+            <li><strong><i>!DOCTYPE html</i>:</strong>  Avisa ao navegador que o site usa a versão mais moderna (HTML5). </li>
+            <li><strong><i>html lang="pt-BR"</i>:</strong>  Abre o documento e avisa que o site está em português.</li>
+            <li><strong><i>head</i>:</strong>   A "cabeça" do site. Aqui ficam as configurações escondidas, como o título da aba (<i>title</i>) e os links para o CSS.</li>
+            <li><strong><i>body</i>:</strong>   O "corpo" do site. É aqui dentro que você coloca tudo o que o usuário realmente vai ver na tela (textos, imagens, links).</li>
+        </ul>
+    </p>
+
+    <h3 id="lista">Listas Ordenadas e Listas Não Ordenadas</h3>
+    <small><a href="#inicio">voltar</a></small>
+    <p>No HTML, usamos listas para organizar itens. A diferença entre elas é puramente a presença ou não de uma ordem numérica.
+        <ol>
+            <li><i>Lista Não Ordenada <u>(ul)</u></i></li>
+            <ul>
+                É a lista com marcadores (as famosas "bolinhas"). Usamos quando a ordem dos itens tanto faz.
+                <li>Tag principal: <u><i>ul</i></u> (Unordered List)</li>
+                <li>Tag de cada item: <i></i>li (List Item)</li>
+            </ul>
+            <li><i>Lista Ordenada <u>(ol)</u></i></li>
+            <ul>
+                É a lista numerada (1, 2, 3...). Usamos quando a ordem dos fatores importa, como em um passo a passo ou ranking.
+                <li>Tag principal: <u><i>ol</i></u> (Ordered List)</li>
+                <li>Tag de cada item: <u><i>li</i></u> (List Item)</li>
+            </ul>
+        </ol>
+        Regra de ouro: Não importa o tipo da lista <i>(ul ou ol)</i>, o conteúdo que vai lá dentro sempre tem que estar envelopado pela tag.<li>
+    </p>
+    <h2 id="referencia">Referências</h2>
+    <small><a href="#inicio">voltar</a></small>
+    <ul>
+        <li><a href="http://dio.me" target="_blank">Dio.me</a></li>
+        <li><a href="http://w3c.org" target="_blank">w3c.org</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank">Curso em video</a></li>
+    </ul>
+</body>
+</html>
